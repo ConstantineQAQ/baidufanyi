@@ -9,7 +9,10 @@ import java.util.Scanner;
 public class translate {
     public static void main(String[] args) {
         TransApi api = new TransApi("20220821001314661", "fae8vmmnU6vqrezAmVNB");
-        translateReply(api);
+        while(true){
+            translateReply(api);
+        }
+
 
     }
     public static void translateReply(TransApi api)
