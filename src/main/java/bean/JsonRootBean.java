@@ -1,7 +1,9 @@
 /**
  * Copyright 2022 json.cn
  */
-package utils;
+package bean;
+import pojo.Trans_result;
+
 import java.util.List;
 
 /**

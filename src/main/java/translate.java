@@ -18,14 +18,14 @@ public class translate {
     public static void translateReply(TransApi api)
     {
         Scanner sc = new Scanner(System.in);
+        System.out.println("请输入:");
         String s = sc.nextLine();
         String trans_in = s;
         if (trans_in.matches("^(?:(?:翻译)|(?:翻译一下)|(?:解释)|(?:解释一下)|(?:translate))[\\s]*$"))
         {
             System.out.println(("请输入正确的表达式，用法示例：" +
                     "\n" + "翻译 apple" +
-                    "\n" + "翻译一下 apple" +
-                    "\n" + "兔兔翻译一下 apple"));
+                    "\n" + "翻译一下 apple"));
         } else if (trans_in.contains("翻译") || trans_in.contains("翻译一下") )
         {
             if (trans_in.length() > trans_in.indexOf(' '))
@@ -43,6 +43,8 @@ public class translate {
                             "\n" + "来源于" + jsonObject.getString("from") + "语种");
                 }
             }
-        }
+        }else if(trans_in.equals("退出")){
+            System.exit(1);
+    }
     }
 }

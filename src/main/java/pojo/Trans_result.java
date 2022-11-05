@@ -1,7 +1,7 @@
 /**
  * Copyright 2022 json.cn
  */
-package utils;
+package pojo;
 
 /**
  * Auto-generated: 2022-08-26 22:24:11
